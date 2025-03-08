@@ -144,6 +144,22 @@ nav a:hover {
     color: #0a9396;
 }
 
+/* Resume Button */
+.resume-btn {
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #0a9396, #94d2bd);
+    color: white !important;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.resume-btn:hover {
+    background: linear-gradient(135deg, #94d2bd, #0a9396);
+    transform: scale(1.05);
+}
+
 /* Contact Section - Trendy Horizontal Layout */
 #contact {
     text-align: center;
