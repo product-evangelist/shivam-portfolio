@@ -11,6 +11,41 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0a9396;
+}
+
 /* Hero Section */
 #hero {
     width: 100vw;
@@ -48,23 +83,46 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Button */
-.btn {
-    display: inline-block;
-    padding: 14px 28px;
-    background: linear-gradient(135deg, #0a9396, #94d2bd);
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    margin-top: 20px;
-    font-weight: 600;
-    font-size: 1.2rem;
-    transition: background 0.3s ease, transform 0.2s ease;
+/* About Section */
+#about {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-.btn:hover {
-    background: linear-gradient(135deg, #94d2bd, #0a9396);
-    transform: scale(1.08);
+/* Projects Section */
+#projects {
+    padding: 80px 20px;
+    background-color: #eef2f3;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 /* Contact Section */
