@@ -1,19 +1,36 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const fadeInElements = document.querySelectorAll("section");
-    
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = 1;
-                entry.target.style.transform = "translateY(0)";
-            }
-        });
-    }, { threshold: 0.3 });
-    
-    fadeInElements.forEach(section => {
-        section.style.opacity = 0;
-        section.style.transform = "translateY(50px)";
-        section.style.transition = "opacity 0.6s ease, transform 0.6s ease";
-        observer.observe(section);
-    });
+// Load particles.js
+particlesJS("particles-js", {
+    "particles": {
+        "number": {
+            "value": 80,
+            "density": { "enable": true, "value_area": 800 }
+        },
+        "color": { "value": "#ffffff" },
+        "shape": {
+            "type": "circle",
+            "stroke": { "width": 0, "color": "#000000" }
+        },
+        "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": { "enable": false, "speed": 1 }
+        },
+        "size": {
+            "value": 3,
+            "random": true,
+            "anim": { "enable": false, "speed": 40 }
+        },
+        "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+        },
+        "move": {
+            "enable": true,
+            "speed": 2,
+            "direction": "none"
+        }
+    }
 });
