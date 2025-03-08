@@ -24,6 +24,7 @@ h1, h2, h3 {
     background: linear-gradient(135deg, #005f73, #0a9396);
     color: white;
     padding: 20px;
+    margin: 0;
 }
 
 #hero h1 {
