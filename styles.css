@@ -144,7 +144,7 @@ nav a:hover {
     color: #0a9396;
 }
 
-/* Resume Button */
+/* Resume Button in Navbar */
 .resume-btn {
     padding: 8px 16px;
     background: linear-gradient(135deg, #0a9396, #94d2bd);
@@ -159,6 +159,27 @@ nav a:hover {
     background: linear-gradient(135deg, #94d2bd, #0a9396);
     transform: scale(1.05);
 }
+
+/* Floating Resume Button */
+.floating-resume-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #0a9396, #94d2bd);
+    color: white;
+    padding: 12px 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.floating-resume-btn:hover {
+    background: linear-gradient(135deg, #94d2bd, #0a9396);
+    transform: scale(1.1);
+}
+
 
 /* Contact Section - Trendy Horizontal Layout */
 #contact {
