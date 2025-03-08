@@ -14,7 +14,7 @@ h1, h2, h3 {
 
 /* Hero Section */
 #hero {
-    /* width: 100vw; */
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@ h1, h2, h3 {
     background: linear-gradient(135deg, #005f73, #0a9396);
     color: white;
     padding: 20px;
-   /* margin: 0; */
+    margin: 0;
 }
 
 #hero h1 {
@@ -69,8 +69,8 @@ h1, h2, h3 {
 
 /* Sections */
 section {
-   /* width: 100%;
-    max-width: 1200px; */
+    width: 100%;
+    max-width: 1200px;
     padding: 100px 20px;
     max-width: 1000px;
     margin: auto;
