@@ -18,7 +18,7 @@ h1, h2, h3 {
     color: #0a9396;
 }
 
-/* Hero Section - Restored to Original */
+/* Hero Section */
 #hero {
     width: 100vw;
     height: 100vh;
@@ -144,7 +144,7 @@ nav a:hover {
     color: #0a9396;
 }
 
-/* Contact Section - Gradient Added */
+/* Contact Section - Trendy Horizontal Layout */
 #contact {
     text-align: center;
     padding: 60px 20px;
@@ -152,26 +152,34 @@ nav a:hover {
     color: white;
 }
 
-/* Contact Links */
-#contact a {
-    color: #ffffff;
-    font-weight: bold;
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     text-decoration: none;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* LinkedIn Icon Styling */
-.social-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-    vertical-align: middle;
+    color: white;
+    font-weight: bold;
     transition: transform 0.2s ease;
 }
 
-.social-icon:hover {
+.contact-item:hover {
     transform: scale(1.1);
+}
+
+.contact-icon {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.2s ease;
+}
+
+.contact-item:hover .contact-icon {
+    transform: scale(1.2);
 }
