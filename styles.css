@@ -47,7 +47,6 @@ h1, h2, h3 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Button */
 .btn {
     display: inline-block;
     padding: 14px 28px;
@@ -65,27 +64,45 @@ h1, h2, h3 {
     transform: scale(1.08);
 }
 
-/* Sections */
-section {
-    padding: 100px 20px;
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
+/* Projects Section with Images */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px 20px;
 }
 
-/* Projects */
-.product {
+.project-card {
     background: white;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
 }
 
-.product:hover {
+.project-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    color: #0a9396;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
 }
 
 /* Navigation */
