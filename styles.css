@@ -165,8 +165,13 @@ nav a:hover {
 
 /* LinkedIn Icon Styling */
 .social-icon {
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     margin-right: 8px;
     vertical-align: middle;
+    transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
 }
