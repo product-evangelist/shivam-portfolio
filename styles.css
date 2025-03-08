@@ -37,6 +37,17 @@ h1, h2, h3 {
     margin: 10px 0;
 }
 
+/* Profile Picture */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Button */
 .btn {
     display: inline-block;
     padding: 14px 28px;
@@ -62,7 +73,7 @@ section {
     text-align: center;
 }
 
-/* Products */
+/* Projects */
 .product {
     background: white;
     padding: 25px;
@@ -121,13 +132,3 @@ nav a:hover {
         margin: 0 10px;
     }
 }
-
-.profile-pic {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
